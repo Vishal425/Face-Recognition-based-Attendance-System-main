@@ -1,0 +1,37 @@
+install mysql-installer
+
+create users;
+user-root
+password-root
+host-localhost:3306
+
+
+>>in sql query
+CREATE DATABASE face_recognition;
+show databases
+use face_recognition;
+
+
+create TABLE face_recognition.student(
+    Student_ID varchar(100),
+    Dep varchar(100),
+    course varchar(100),
+    Year varchar(100),
+    Semester varchar(100),
+    Name varchar(100),
+    Roll varchar(100),
+    Gender varchar(100),
+    Dob varchar(100),
+    Email varchar(100),
+    Phone varchar(100),
+    Address varchar(100),
+    PhotoSample varchar(100));
+
+CREATE TABLE face_recognition.stdattendance(
+	Student_ID varchar(100),
+	Roll varchar(100),
+	Name varchar(100),
+	time varchar(100),
+	date varchar(100),
+	attend varchar(100));
+
